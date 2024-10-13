@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button (click)="downloadPDF()">Download</button>
+
+<div class="py-4 ">
+  <div class="container resume-container image-layo shadow-lg p-0 " id="resume-container">
+      <div class="row " id="resume-preview">
+          <div class="col-md-4  text-white  p-4">
+              <div class="text-center mb-4">
+                  <div class="d-flex justify-content-center ">
+
+                      <div class="profile-pic-container mb-3">
+                          <label for="profilePicInput">
+                              <div class="profile-pic-frame mb-2">
+                                  <img  id="profile-pic" alt="Profile Picture" />
+                              </div>
+                          </label>
+
+                          <input *ngIf="true" type="file" id="profilePicInput"
+                               accept="image/*" />
+                      </div>
+
+
+
+
+                  </div>
+
+                  <h3 class="text-uppercase fw-normal">{{ 'Your Name' }}
+                  </h3>
+                  <p>{{'Profession' }}</p>
+              </div>
+
+              <div class="mb-4">
+                  <h5>Contact</h5>
+                  <hr class="bg-light">
+                  <div class="d-flex ">
+                      <div>
+
+                      </div>
+                      <div>
+
+                          <p>
+                              {{'Your Phone Number' }}</p>
+                      </div>
+                  </div>
+                  <div class="d-flex ">
+                      <div>
+
+                      </div>
+                      <div>
+
+                          <p> <i class="fas fa-envelope"></i>{{
+                              'your.email@example.com' }}</p>
+                      </div>
+                  </div>
+                  <div class="d-flex ">
+                      <div>
+
+                      </div>
+                      <div>
+
+                          <p><i class="fas fa-globe"></i> {{
+                              'LinkedIn URL' }}</p>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="mb-4">
+                  <h5>Education</h5>
+                  <hr class="bg-light">
+                      <p><strong class="fw-normal">Institution:</strong> {{
+                     'Institution
+                          Name' }}</p>
+                      <p><strong class="fw-normal">Degree:</strong> {{'Degree' }}</p>
+
+              </div>
+
+              <div class="mb-4">
+                  <h5>Skills</h5>
+                  <hr class="bg-light">
+                  <ul class="list-unstyled">
+                     {{'Skill' }}
+                  </ul>
+              </div>
+              <div class="mb-4">
+                  <h5>Languages</h5>
+                  <hr class="bg-light">
+                  <ul class="list-unstyled">
+                        {{ 'Languages' }}
+                  </ul>
+              </div>
+          </div>
+
+          <div class="col-md-8 p-4">
+
+
+              <div class="mb-4">
+                  <h3 class="text-uppercase " >Profile</h3>
+                  <hr>
+                  <p>{{ 'Your summary goes here.' }}</p>
+              </div>
+
+              <div class="mb-4">
+                  <h3 class="text-uppercase" >Work Experience</h3>
+                  <hr>exp
+                      <p><strong>Company:</strong> {{'Company Name' }}</p>
+                      <p><strong>Job Title:</strong> {{ 'Job Title' }}</p>
+                      <p><strong>Duration:</strong> {{'dd/MM/yyy}}</p>
+                      <p><strong>Description:</strong> {{'Your Description goes here' }}</p>
+
+
+
+
+
+              </div>
+
+              <div>
+                  <h3 class="text-uppercase"></h3>
+                  <hr>
+                      class="d-flex justify-content-between">
+                      <div>
+                          <p><strong>Certification:</strong> {{
+                             'Certification Name' }}</p>
+                      </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+</body>
+</html>
